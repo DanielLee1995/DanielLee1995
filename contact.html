@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store - Contact</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <header id="header">
+      <h1><img src="images/logo.png" style="width:50px;height:auto;">Neutrality</h1>
+      <h5>Designer Furniture Retailer</h5>
+    </header>
+    <nav id="banner">
+      <ul>
+        <li><a href="index.html" class="all"><img src="images/homelogo.png"> Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <h1>
+      Contact Us
+    </h1>
+
+    <form id="contactUs" method="POST" action="https://httpbin.org/post"> 
+      <label>
+        First Name:
+        <input type="text" name="fName" required>
+      </label>
+      <br>
+      <label>
+        Last Name:
+        <input type="text" name="lName" required>
+      </label>
+      <br>
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <br>
+      <label>
+        Address:
+        <input type="text" name="address" required>
+      </label>
+      <br>
+      <label>
+        City:
+        <input list="cities" name="city" required>
+      </label>
+      <br>
+      <label>
+        Phone:
+        <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="###-###-####" required>
+      </label>
+      <br>
+      <label>
+        Postal Code:
+        <input type="text"  pattern="[a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9]" name="postal" placeholder="e.g. A1B2C3" required>
+      </label>
+      <br><br><br>
+      <label>
+        I'd like to be contacted by phone:
+        <input type="checkbox" name="contactByPhone" id="contactByPhone">
+      </label>
+      <br><br>
+      <label>
+        What do you want to contact us about? Please check if applicable:
+        <p id="indented">
+          <input type="radio" name="reason" id="reason-1" class="reason" value="Question" checked>Question<br>
+          <input type="radio" name="reason" id="reason-2" class="reason" value="Comment">Comment<br>
+          <input type="radio" name="reason" id="reason-3" class="reason" value="orderProblem">Order Problem<br>
+          <label id="orderNumber">Order Number:<input type="number" name="reason" placeholder="#######" value=0 required></label>
+        </p>
+      </label>
+      <p>Enter your message in the field below:</p>
+      <textarea name="message" placeholder="Enter your message here:" required></textarea><br>
+
+      <input type="text" name="studentName" value="Daniel Lee" hidden>
+
+      <button type="submit">Submit</button>
+    </form>
+          
+    <datalist id="cities">    
+      <option value="Toronto"></option>
+      <option value="Ottawa"></option>
+      <option value="Vancouver"></option>
+      <option value="Edmonton"></option>
+      <option value="Regina"></option>
+      <option value="St. John"></option>
+      <option value="Winnipeg"></option>
+      <option value="Quebec"></option>
+      <option value="Victoria"></option>
+    </datalist>
+    <!--    
+
+    Part 2: Contact Us Page
+
+    Requirements:
+
+    1. Use the same header/footer, colours, fonts, etc. as your index.html page.
+    It should be obvious to the user they they are still on the same site, and that
+    contact.html is part of your store.
+
+    2. Include an HTML Form for the user to fill out his or her information along
+    with their message to you. Your form should including the following, and all
+    fields should be mandatory unless otherwise noted, and use the most appropriate <input> type:
+    
+        - First Name
+        - Last Name
+        - Email Address
+        - Address
+        - City (use a <datalist> for autocomplete of common Canadian cities)
+        - Phone Number (must be a valid Canadian Phone Number, use regex)
+        - Postal Code (must be a valid Canadian Postal Code, use regex)
+        - Checkbox Option to be phoned ("Would you like to be phoned?")
+        - Radio Options to specify what this is about: one of "Question",
+          "Comment", or "Order Problem". If the user selects "Order Problem",
+          dynamically reveal another input box to enter the order number. In the
+          case of "Comment" or "Question" hide this input box.
+        - A large area to enter the message that they want to send
+        - A hidden input field with your name
+
+    3. The form should submit to https://httpbin.org/post using the POST method,
+    and only allow the user to submit when all data has been entered and there
+    aren't any validation errors.  The data posted to httpbin.org should include
+    all data defined in the form above (e.g., visible and hidden fields).
+
+  -->
+  <script src="contactScript.js"></script>
+
+  </body>
+</html>

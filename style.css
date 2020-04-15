@@ -1,0 +1,164 @@
+/** Add any CSS you need to this file. */
+@import url('https://use.typekit.net/oov2wcw.css');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-color: whitesmoke;
+    font-family: "century-gothic";
+  }
+
+header {
+    background-color: rgb(56, 56, 56);
+    color: whitesmoke;
+    padding: 15px 100px 15px 200px;
+    font-size: xx-large;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 15px 15px 0px 0px;
+}
+
+h5 {
+    margin-left: 1300px;
+    margin-top: -50px;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: rgb(172, 172, 172);
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  background-color: rgb(175,175,175);
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 20px;
+}
+
+.sidenav {
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: gainsboro;
+}
+
+.sidenav a {
+    position: relative;
+    margin: 0px 20px;
+    line-height: 60px;
+}
+
+#subtitle {
+    font-size: 2vw;
+    margin-top: 50px;
+    margin-left: 80px;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+#item {
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    width: 700px;
+    height: 320px;
+}
+
+div p {
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: right;
+}
+
+#itemTitle {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size:20px;
+}
+
+#mainBody div{
+    float: left;
+}
+
+input {
+    text-align: left;
+    position: absolute;
+    left: 300px;
+    font-family: inherit;
+    width: 250px;
+}
+
+label {
+    line-height: 200%;
+}
+
+#contactByPhone {
+    width: 15px;
+    left: 390px;
+    margin-top: 10px;
+}
+
+#contactUs {
+    margin: 30px 75px;
+    width: 750px;
+    background-color: wheat;
+    padding: 25px;
+}
+
+#indented {
+    position: relative;
+    left:50px;
+}
+
+#topic {
+    position: absolute;
+    left: -50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+#numberBox {
+    position: relative;
+}
+
+textarea {
+    position: relative;
+    width: 740px;
+    height: 250px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: black;
+    color: gray;
+    padding: 20px;
+}
+
+footer label input {
+    position: relative;
+    margin-left: 1px;
+    left: 0px;
+}

@@ -1,0 +1,30 @@
+window.onscroll = function () {
+    scrolling()
+};
+
+function scrolling() {
+    var header = document.getElementById("header");
+    var banner = document.getElementById("banner");
+    var threshold = header.offsetTop;
+
+    if (window.pageYOffset > threshold) {
+        header.classList.add("sticky");
+    }
+    else {
+        header.classList.remove("sticky");
+    }
+}
+
+.sticky {
+    position: fixed;
+    width: 83.25%;
+    top: 0;
+    padding: 0px 100px 0px 200px;
+}
+
+.sticky + #banner {
+    position: fixed;
+    top: 99px;
+    width: 99%;
+    border-radius: 0px 0px 10px 10px;
+}
