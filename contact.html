@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WEB222 Store - Contact</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -25,39 +25,39 @@
     <form id="contactUs" method="POST" action="https://httpbin.org/post"> 
       <label>
         First Name:
-        <input type="text" name="fName" required>
+        <input type="text" name="fName" required id="text">
       </label>
       <br>
       <label>
         Last Name:
-        <input type="text" name="lName" required>
+        <input type="text" name="lName" required id="text">
       </label>
       <br>
       <label>
         Your email:
-        <input type="email" name="email" required>
+        <input type="email" name="email" required id="text">
       </label>
       <br>
       <label>
         Address:
-        <input type="text" name="address" required>
+        <input type="text" name="address" required id="text">
       </label>
       <br>
       <label>
         City:
-        <input list="cities" name="city" required>
+        <input list="cities" name="city" required id="text">
       </label>
       <br>
       <label>
         Phone:
-        <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="###-###-####" required>
+        <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="###-###-####" required id="text">
       </label>
       <br>
       <label>
         Postal Code:
-        <input type="text"  pattern="[a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9]" name="postal" placeholder="e.g. A1B2C3" required>
+        <input type="text"  pattern="[a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9]" name="postal" placeholder="e.g. A1B2C3" required id="text">
       </label>
-      <br><br><br>
+      <br><br>
       <label>
         I'd like to be contacted by phone:
         <input type="checkbox" name="contactByPhone" id="contactByPhone">

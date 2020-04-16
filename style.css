@@ -15,21 +15,26 @@ body {
 header {
     background-color: rgb(56, 56, 56);
     color: whitesmoke;
-    padding: 15px 100px 15px 200px;
-    font-size: xx-large;
+    padding: 2vw 5vw 2vw 5vw;
     font-family: 'Bebas Neue', cursive;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 1vw 1vw 0px 0px;
+}
+
+h1 {
+    font-size:calc(20px + 1.5vw);
 }
 
 h5 {
-    margin-left: 1300px;
-    margin-top: -50px;
+    text-align: right;
+    font-size: calc(5px + 1.5vw);
+    margin-left: 65vw;
+    margin-top: -5vw;
     color: whitesmoke;
 }
 
 nav {
     background-color: rgb(172, 172, 172);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0vw 0vw 1vw 1vw;
 }
 
 nav ul {
@@ -37,6 +42,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    border-radius: 0vw 0vw 1vw 1vw;
 }
 
 nav ul li {
@@ -49,40 +55,42 @@ nav a {
   color: #ffffff;
   background-color: rgb(175,175,175);
   text-align: center;
-  padding: 5px 5px;
+  padding: 1.2vw;
   font-size: 20px;
 }
 
 .sidenav {
-    width: 100px;
+    width: 5vw;
     position: fixed;
     right: 10px;
     margin-top: 100px;
     padding-top: 20px;
     background-color: gainsboro;
+    text-align: center;
 }
 
 .sidenav a {
     position: relative;
-    margin: 0px 20px;
-    line-height: 60px;
+    line-height: 3vw;
 }
 
 #subtitle {
-    font-size: 2vw;
-    margin-top: 50px;
-    margin-left: 80px;
+    font-size: 2.5vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;
-
 }
 
 #item {
+    display: inline-block;
+    overflow: hidden;
     background-color: wheat;
-    margin: 20px;
-    padding: 20px;
-    width: 700px;
-    height: 320px;
+    margin: 1vw;
+    padding: 1vw;
+    width: 40vw;
+    height: auto;
+    min-width: 300px;
 }
 
 div p {
@@ -95,58 +103,41 @@ div p {
 #itemTitle {
     text-decoration: underline;
     font-weight: bold;
-    font-size:20px;
-}
-
-#mainBody div{
-    float: left;
-}
-
-input {
-    text-align: left;
-    position: absolute;
-    left: 300px;
-    font-family: inherit;
-    width: 250px;
-}
-
-label {
-    line-height: 200%;
-}
-
-#contactByPhone {
-    width: 15px;
-    left: 390px;
-    margin-top: 10px;
+    font-size: calc(12px + 0.4vw);
 }
 
 #contactUs {
-    margin: 30px 75px;
-    width: 750px;
+    display: inline-block;
+    margin: 1vw 5vw;
+    width: 35vw;
+    min-width: 250px;
     background-color: wheat;
-    padding: 25px;
+    padding: 0.5vw;
+    font-size: calc(12+00.1vw);
 }
 
-#indented {
-    position: relative;
-    left:50px;
+label {
+    line-height: 300%;
 }
 
-#topic {
+#text {
     position: absolute;
-    left: -50px;
-    width: 50px;
-    margin-top: 10px;
+    left: 15vw;
+    width: 15vw;
+    min-width: 200px;
+    margin-top: .5vw;
 }
 
-#numberBox {
-    position: relative;
+.reason {
+    margin-left: 3vw;
 }
 
 textarea {
     position: relative;
-    width: 740px;
-    height: 250px;
+    width: 35vw;
+    min-width: 240px;
+    min-height: 100px;
+    height: 15vw;
 }
 
 footer {
@@ -154,11 +145,86 @@ footer {
     text-align: center;
     background-color: black;
     color: gray;
-    padding: 20px;
+    padding: 1.5vw;
 }
 
 footer label input {
     position: relative;
-    margin-left: 1px;
-    left: 0px;
+    margin-left: 0.1vw;
+    left: 0vw;
+}
+
+img {
+    max-width: 22vw;
+    height: auto;
+}
+
+#item img {
+    min-width: 250px;
+}
+
+@media screen and (max-width: 1280) {
+    h5 {
+        display: none;
+    }
+
+    .sidenav {
+        margin-top: 10px;
+    }
+
+    #item {
+        display: block;
+        background-color: wheat;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        background-image: none;
+    }
+
+    header {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    nav a {
+        font-size: 0;
+        color: transparent;
+    }
+
+    nav .contact {
+        font-size: 12px;
+        color: black;
+    }
+
+    h5 {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    #subtitle {
+        font-size: 20px;
+    }
+
+    #item img {
+        float: initial;
+        text-align: center;
+    }
+
+    div p {
+        text-align: center;
+        margin: 5vw 0vw;
+    }
+
+    #text {
+        margin-top: 10vw;
+    }
+
+    .reason {
+        margin-left: 10vw;
+    }
 }

@@ -34,7 +34,7 @@
         addText(surfaces[5], "Margot", "Nightstand. Walnut legs. White Laquer finish.", "Surfaces", "$319");
         addText(surfaces[6], "Andrej", "Sideboard. Made with walnut veneer. White laquer doors", "Surfaces", "$1299");
         addText(surfaces[7], "Augustus", "Sideboard. Made with walnut veneer. Grey laquer doors. White ceramic top.", "Surfaces", "$1449");
-        addText(surfaces[8], "Truman", "Media Console. Made with walnut veneer. White Laquer finish.", "Surfaces", "$");
+        addText(surfaces[8], "Truman", "Media Console. Made with walnut veneer. White Laquer finish.", "Surfaces", "$1199");
     }
 
     function addText(div, title, desc, cat, price) {
