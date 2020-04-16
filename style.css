@@ -113,7 +113,7 @@ div p {
     min-width: 250px;
     background-color: wheat;
     padding: 0.5vw;
-    font-size: calc(12+00.1vw);
+    font-size: calc(8+00.2vw);
 }
 
 label {
