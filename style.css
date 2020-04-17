@@ -227,3 +227,28 @@ img {
         margin-left: 10vw;
     }
 }
+
+@media screen and (max-height: 414px) {
+    #item {
+        width: 80vw;
+        height: auto;
+    }
+
+    #item img{
+        width: 70vw;
+        height: auto;
+        text-align: center;
+    }
+
+    #item p {
+        display: block;
+        text-align: center;
+    }
+
+    #contactUs {
+        width: 100vw;
+        height: auto;
+        display: block;
+        font-size: 10px;
+    }
+}
