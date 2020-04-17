@@ -251,4 +251,12 @@ img {
         display: block;
         font-size: 10px;
     }
+
+    #text {
+        width: 50vw;
+    }
+
+    textarea {
+        height: 25vw;
+    }
 }
