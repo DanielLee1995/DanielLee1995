@@ -254,10 +254,11 @@ img {
 
     #text {
         width: 50vw;
+        left: 20vw;
     }
 
     textarea {
-        width: 50vw;
+        width: 80vw;
         height: 25vw;
     }
 }
